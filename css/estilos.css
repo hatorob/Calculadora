@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.cabecera-container {
+    background: #24292E;
+    color: white;
+    height: 60px;
+   
+}
+
+.cabecera {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+}
+
+.cabecera h1, .p {
+    margin-top: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.calculadora {
+    max-width: 1025px;
+    margin: 60px auto;
+    height: 750px;
+    background: #2d292d;
+    
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 200px 100px 100px 100px 100px 100px;
+    ;
+    padding: 20px 20px;;
+}
+
+.item {
+    background: #535254;
+    padding: 10px;
+    border: 1px solid #c68ffd;
+}
+
+.pantalla {
+    grid-column: 1 / span 6;
+}
+
+.mas {
+    grid-column: 5;
+    grid-row: 5 / span 6;
+    grid-gap: 0;
+}
+.igual {
+        grid-column: 6;
+        grid-row: 5 / span 6;
+}
+
+.display {
+    width: 820px;
+    margin: 30px auto;
+    height: 10px;
+    padding: 50px 0 50px 0;
+    background: white;
+}
+
+/* botones */
+
+.boton, .botonNum, .botonAs,
+.botonMas, .botonIgual {
+    background: #535254;
+    width: 120px;
+    margin: 0 5px;
+    height: 80px;
+    border: 1px solid #949494;
+    color: white;
+    text-align: center;
+    font-size: 30px;
+}
+
+.botonNum {
+    background: white;
+    color: blue;
+    border: 1px solid blue;
+}
+
+.botonAs {
+    background: #E40101;
+    color: white;
+}
+
+.botonMas {
+    height: 175px;
+    font-size: 110px;
+}
+.botonIgual {
+    height: 175px;
+    font-size: 110px;
+    background: blue;
+}
