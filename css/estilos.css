@@ -1,6 +1,12 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: content-box;
+    box-sizing: border-box;
+}
+body {
+    background: #796179;
+    box-sizing: content-box
 }
 
 .cabecera-container {
@@ -20,6 +26,7 @@
     margin-top: 10px;
     padding-left: 50px;
     padding-right: 50px;
+    font-size: 22px;
 }
 
 .calculadora {
@@ -34,11 +41,12 @@
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: 200px 100px 100px 100px 100px 100px;
-    ;
-    padding: 20px 20px;;
+    padding: 20px 20px;
+    grid-area: 'grid';
 }
 
 .item {
+    
     background: #535254;
     padding: 10px;
     border: 1px solid #c68ffd;
@@ -59,7 +67,7 @@
 }
 
 .display {
-    width: 820px;
+    max-width: 820px;
     margin: 30px auto;
     height: 10px;
     padding: 50px 0 50px 0;
@@ -99,4 +107,291 @@
     height: 175px;
     font-size: 110px;
     background: blue;
+}
+
+
+@media screen and (max-width: 1023px) {
+
+    .calculadora {
+        max-width: 1025px;
+        margin: 60px auto;
+        height: 750px;
+        background: #2d292d;
+        
+    }
+
+    .grid-container {
+        max-width: 957px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: 200px 100px 100px 100px 100px 100px;
+        padding: 20px 20px;
+        grid-area: 'grid';
+    } 
+
+    .display {
+        max-width: 820px;
+        margin: 30px auto;
+        height: 10px;
+        padding: 50px 0 50px 0;
+        background: white;
+    }
+    .item1 {
+        background: #2D292D;
+        padding: 10px;
+    }
+
+    .item {
+    max-width: 156px;
+    
+    background: #535254;
+    padding: 10px;
+    border: 1px solid #c68ffd;
+   }
+
+   .container-buttom {
+       max-width: 156px;
+       margin: 0 auto !important;
+   }
+
+   .boton, .botonNum, .botonAs, 
+   .botonMas, .botonIgual {
+    background: #535254;
+    width: 100%;
+    height: 80px;
+    border: 1px solid #949494;
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    margin: 0;
+    margin-left: auto;
+    }
+    .botonNum {
+        background: white;
+        color: blue;
+        border: 1px solid blue;
+    }
+
+    .botonAs {
+        background: #E40101;
+        color: white;
+    }
+
+    .botonMas {
+        height: 175px;
+        font-size: 110px;
+    }
+    .botonIgual {
+        height: 175px;
+        font-size: 110px;
+        background: blue;
+    }
+
+
+}
+
+@media screen and (max-width: 768px) {
+
+    .cabecera-container {
+        background: #24292E;
+        color: white;
+        height: 80px;
+       
+    }
+    
+    .cabecera {
+        display: block;
+        text-align: center;
+    }
+    
+    .cabecera h1, .p {
+        margin-top: 0;
+        padding-left: 40px;
+        padding-right: 40px;
+        font-size: 25px;
+    }
+    h1 {
+        margin: 10px 0 10px 0;
+    }
+
+    .calculadora {
+        max-width: 1025px;
+        margin: 60px auto;
+        height: 750px;
+        background: #2d292d;
+        
+    }
+
+    .grid-container {
+        max-width: 957px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: 200px 100px 100px 100px 100px 100px;
+        padding: 20px 20px;
+        grid-area: 'grid';
+    } 
+
+    .display {
+        max-width: 820px;
+        margin: 30px auto;
+        height: 10px;
+        padding: 50px 0 50px 0;
+        background: white;
+    }
+    .item1 {
+        background: #2D292D;
+        padding: 10px;
+    }
+
+    .item {
+    max-width: 156px;
+    
+    background: #535254;
+    padding: 10px;
+    border: 1px solid #c68ffd;
+   }
+
+   .container-buttom {
+       max-width: 156px;
+       margin: 0 auto !important;
+   }
+
+   .boton, .botonNum, .botonAs, 
+   .botonMas, .botonIgual {
+    background: #535254;
+    width: 100%;
+    height: 80px;
+    border: 1px solid #949494;
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    margin: 0;
+    margin-left: auto;
+    }
+    .botonNum {
+        background: white;
+        color: blue;
+        border: 1px solid blue;
+    }
+
+    .botonAs {
+        background: #E40101;
+        color: white;
+    }
+
+    .botonMas {
+        height: 175px;
+        font-size: 110px;
+    }
+    .botonIgual {
+        height: 175px;
+        font-size: 110px;
+        background: blue;
+    }
+
+
+}
+
+@media screen and (max-width: 468px) {
+
+    .cabecera-container {
+        background: #24292E;
+        color: white;
+        height: 100px;
+       
+    }
+    
+    .cabecera {
+        display: block;
+        text-align: center;
+    }
+    
+    .cabecera h1, .p {
+        margin-top: 0;
+        padding-left: 40px;
+        padding-right: 40px;
+        font-size: 22px;
+    }
+    h1 {
+        margin: 10px 0 10px 0;
+    }
+
+    .calculadora {
+        max-width: 1025px;
+        margin: 60px auto;
+        height: 750px;
+        background: #2d292d;
+    }
+
+    .grid-container {
+        max-width: 957px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: 200px 100px 100px 100px 100px 100px;
+        padding: 20px 20px;
+        grid-area: 'grid';
+    } 
+
+    .display {
+        max-width: 820px;
+        margin: 30px auto;
+        height: 10px;
+        padding: 50px 0 50px 0;
+        background: white;
+    }
+    .item1 {
+        background: #2D292D;
+        padding: 10px;
+    }
+
+    .item {
+    max-width: 100px;
+    
+    background: #535254;
+    padding: 10px;
+    border: 1px solid #c68ffd;
+   }
+
+   .container-buttom {
+       max-width: 50px;
+       margin: 0 auto !important;
+   }
+
+   .boton, .botonNum, .botonAs, 
+   .botonMas, .botonIgual {
+    background: #535254;
+    width: 100%;
+    height: 80px;
+    border: 1px solid #949494;
+    color: white;
+    text-align: center;
+    font-size: 15px;
+    margin: 0;
+    margin-left: auto;
+    }
+    .botonNum {
+        background: white;
+        color: blue;
+        border: 1px solid blue;
+    }
+
+    .botonAs {
+        background: #E40101;
+        color: white;
+    }
+
+    .botonMas {
+        height: 175px;
+        font-size: 15px;
+    }
+    .botonIgual {
+        height: 175px;
+        font-size: 15px;
+        background: blue;
+    }
+
+
 }
